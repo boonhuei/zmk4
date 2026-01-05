@@ -30,5 +30,17 @@
                                 &trans &trans &trans &trans
             >;
         };
+        /* =====================
+         * Adjust layer (2)
+         * ===================== */
+        adjust {
+            bindings = <
+                &studio_unlock &none &none &none &none   &none &none &none &none &none
+                &none          &none &none &none &none   &none &none &none &none &none
+                &none          &none &none &none &none   &none &none &none &none &none
+
+                                &trans &trans &trans &trans
+            >;
+        };
     };
 };
