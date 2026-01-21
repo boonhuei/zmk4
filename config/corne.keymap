@@ -17,6 +17,34 @@
             bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
             label = "DOUBLEQUOTE";
         };
+
+        BP: BP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(B) &kp I &kp LS(B) &kp I &kp LS(O) &kp N2 &kp N2 &kp N1 &kp N0>;
+            label = "BP";
+        };
+
+        Spwd: Spwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp EXCL &kp N4 &kp N7 &kp M &kp C &kp M &kp S &kp AT &kp D &kp M &kp I &kp N>;
+            label = "SPWD";
+        };
+
+        S2goPWD: S2goPWD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp EXCL &kp N2 &kp G &kp O>;
+            label = "S2GOPWD";
+        };
+
+        IGTPWD: IGTPWD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp EXCL &kp N1 &kp G &kp T &kp W &kp I &kp N &kp A &kp C &kp C>;
+            label = "IGTPWD";
+        };
     };
 
     keymap {
@@ -43,10 +71,10 @@
 
         Num {
             bindings = <
-&studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp N7  &kp N8        &kp N9      &trans          &kp UP_ARROW    &kp BACKSPACE
-&trans          &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5        &kp N6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-&trans          &trans  &trans  &trans  &trans  &trans    &kp N1  &kp N2        &kp N3      &trans          &trans          &trans
-                                &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp KP_DOT
+&studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5      &kp N7  &kp N8        &kp N9      &trans          &kp UP_ARROW    &kp BACKSPACE
+&trans          &trans  &trans  &trans  &Spwd    &Spwd       &kp N4  &kp N5        &kp N6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans          &trans  &trans  &trans  &IGTPWD  &S2goPWD    &kp N1  &kp N2        &kp N3      &trans          &trans          &trans
+                                &trans  &trans   &trans      &trans  &kp NUMBER_0  &kp KP_DOT
             >;
         };
 
