@@ -18,13 +18,6 @@
             label = "DOUBLEQUOTE";
         };
 
-        BP: BP {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp I &kp LS(B) &kp I &kp LS(O) &kp N2 &kp N2 &kp N1 &kp N0>;
-            label = "BP";
-        };
-
         Spwd: Spwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -44,6 +37,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp EXCL &kp N1 &kp G &kp T &kp W &kp I &kp N &kp A &kp C &kp C>;
             label = "IGTPWD";
+        };
+
+        BPWD: BPWD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(B) &kp I &kp LS(B) &kp I &kp LS(O) &kp N2 &kp N2 &kp N1 &kp N0>;
+            label = "BPWD";
         };
     };
 
@@ -72,7 +72,7 @@
         Num {
             bindings = <
 &studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5      &kp N7  &kp N8        &kp N9      &trans          &kp UP_ARROW    &kp BACKSPACE
-&trans          &trans  &trans  &trans  &Spwd    &BP         &kp N4  &kp N5        &kp N6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans          &trans  &trans  &trans  &Spwd    &BPWD       &kp N4  &kp N5        &kp N6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 &trans          &trans  &trans  &trans  &IGTPWD  &S2goPWD    &kp N1  &kp N2        &kp N3      &trans          &trans          &trans
                                 &trans  &trans   &trans      &trans  &kp NUMBER_0  &kp KP_DOT
             >;
