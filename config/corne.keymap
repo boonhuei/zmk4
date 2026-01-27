@@ -28,21 +28,21 @@
         Spwd: Spwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp EXCL &kp N4 &kp N7 &kp M &kp C &kp M &kp S &kp AT &kp D &kp M &kp I &kp N>;
+            bindings = <&kp LS(T) &kp EXCL &kp N4 &kp N7 &kp M &kp C &kp M &kp S &kp AT &kp D &kp M &kp I &kp N>;
             label = "SPWD";
         };
 
         S2goPWD: S2goPWD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp EXCL &kp N2 &kp G &kp O>;
+            bindings = <&kp LS(S) &kp Y &kp S &kp T &kp E &kp M &kp EXCL &kp N2 &kp G &kp O>;
             label = "S2GOPWD";
         };
 
         IGTPWD: IGTPWD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp EXCL &kp N1 &kp G &kp T &kp W &kp I &kp N &kp A &kp C &kp C>;
+            bindings = <&kp LS(T) &kp EXCL &kp N1 &kp G &kp T &kp W &kp I &kp N &kp A &kp C &kp C>;
             label = "IGTPWD";
         };
     };
