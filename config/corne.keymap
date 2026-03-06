@@ -42,8 +42,15 @@
         BPWD: BPWD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(B) &kp I &kp LS(B) &kp I &kp LS(O) &kp N2 &kp N2 &kp N1 &kp N0>;
+            bindings = <&kp LS(B) &kp I &kp LS(B) &kp I &kp LS(O) &kp N2 &kp N2 &kp N1 &kp N0>;
             label = "BPWD";
+        };
+
+        BEM: BEM {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp O &kp O &kp N &kp H &kp U &kp E &kp I &kp DOT &kp L &kp O &kp W &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "BEM";
         };
     };
 
@@ -72,7 +79,7 @@
         Num {
             bindings = <
 &studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5      &kp N7  &kp N8        &kp N9      &trans          &kp UP_ARROW    &kp BACKSPACE
-&trans          &trans  &trans  &trans  &Spwd    &BPWD       &kp N4  &kp N5        &kp N6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans          &trans  &trans  &BPWD   &Spwd    &BEM        &kp N4  &kp N5        &kp N6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 &trans          &trans  &trans  &trans  &IGTPWD  &S2goPWD    &kp N1  &kp N2        &kp N3      &trans          &trans          &trans
                                 &trans  &trans   &trans      &trans  &kp NUMBER_0  &kp KP_DOT
             >;
